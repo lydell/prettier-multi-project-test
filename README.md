@@ -10,3 +10,5 @@ Here’s a test for this setup:
 4. Make edits in all three `index.js` files (one for each service).
 
 Expected behavior: `prettier-vscode` resolves Prettier for each file, so that `serviceA/` gets 2.0, `serviceB/` gets 1.19 and `serviceC/` gets 1.18.
+
+I’m not 100% sure, but the key to get this working seems to be making sure you have a Prettier config file in each service. This example uses Prettier’s defaults, so the config file is just `echo "{}" > .prettierrc.json` in each service.
